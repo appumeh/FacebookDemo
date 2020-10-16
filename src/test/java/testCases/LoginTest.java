@@ -30,10 +30,10 @@ public class LoginTest {
 		
 		driver.get("https://facebook.com");
 		driver.manage().window().maximize();
-		//driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("tandonapurva@gmail.com");
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("darkspectre");
-		//driver.findElement(By.name("login")).click();
+		driver.findElement(By.name("login")).click();
 		
 	}
 
